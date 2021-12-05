@@ -72,8 +72,8 @@ header {
 
 #wrap {
   clear: both;
-  /*background-color: rgba(255, 255, 255, 0.8);*/
   background-color: #ffffff;
+/*  background-color: rgba(255, 255, 255, 0.8); */
   margin-top: 220px;
   padding: 35px 0;
 }
@@ -223,6 +223,44 @@ table {
   background-color: transparent;
   margin-top: 0;
   padding: 0;
+}
+
+#portfolio {
+  background-image: url(../img/bg-portfolio.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+.main {
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+
+.sidebar {
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  font-family: 'Bitter', serif;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.sidebar ul a {
+  color: #333333;
+}
+
+a img:hover {
+  opacity: 0.8;
 }
 
 /* Original */
