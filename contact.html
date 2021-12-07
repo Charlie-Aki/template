@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Template</title>
+  <!-- Font Setting -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Original CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.ico">
+</head>
+<body id="contact">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="./index.html"><img src="./img/logo.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul class="global-nav">
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Contents -->
+  <div id="wrap">
+    <div class="content">
+      <div class="main-center">
+        <h1>Contact</h1>
+        <p>This page is a contact form to send a message or questions to the author. Please feel free to send any questions about this Template Website.</p>
+        <section class="access clearfix">
+          <h2 class="icon">Access</h2>
+          <table>
+            <tr>
+              <th>Address</th>
+              <td>Postal Code: 123-456<br>1-2-3, Shibuya City, Tokyo, Japan</td>
+            </tr>
+            <tr>
+              <th>Tel.</th>
+              <td>012-3456-7890</td>
+            </tr>
+            <tr>
+              <th>Access by Train</th>
+              <td>5min by feet from JR Shibuya Station.</td>
+            </tr>
+            <tr>
+              <th>Access by Car</th>
+              <td>10min via ABC I.C.</td>
+            </tr>
+          </table>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1620.3345993856851!2d139.7526673!3d35.6851465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2sImperial%20Palace!5e0!3m2!1sen!2sjp!4v1638880618556!5m2!1sen!2sjp"
+            width="460" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section>
+          <h2 class="icon">Contact form</h2>
+          <div class="form">
+            <form>
+              <dl>
+                <dt><span class="required">Name</span></dt>
+                <dd><input type="text" name="name" class="name" required></dd>
+                <dt><span class="required">Email Address</span></dt>
+                <dd><input type="email" name="email" class="email" required></dd>
+                <dt>Tel</dt>
+                <dd><input type="tel" name="tel" class="tel"></dd>
+                <dt>Type of Message</dt>
+                <dd>
+                  <select name="type" class="type">
+                    <option value="Photo Request">Photo Request</option>
+                    <option value="Request for Standing on Conference">Request for Standing on Conference</option>
+                    <option value="Other Questions">Other Questions</option>
+                  </select>
+                </dd>
+                <dt>Contact Method</dt>
+                <dd>
+                  <input type="radio" name="contact" value="Email">Email
+                  <input type="radio" name="contact" value="Tel">Tel
+                </dd>
+                <dt>Message</dt>
+                <dd><textarea name="message" class="message"></textarea></dd>
+              </dl>
+              <button type="submit" class="btn">Send</button>
+            </form>
+            <div class="attention">
+              <p>* (<span class="required"></span>) indicates that the section is required to be filled.<br>
+              * Responsible member will respond to the message within 48 hours.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <small>(C) 2021 Charlie Evans</small>
+  </footer>
+
+  <!-- Script Files -->
+  <!-- <script src="./js/sth.js"></script> -->
+
+</body>
+</html>
