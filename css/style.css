@@ -87,6 +87,13 @@ header {
 .content {
   width: 960px;
   margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+#portfolio .content,
+#photograph .content,
+#video .content {
+  padding-bottom: 0;
 }
 
 footer {
@@ -161,6 +168,7 @@ footer small {
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
+/*  background-size: cover; */
 }
 
 .main-center {
@@ -207,10 +215,6 @@ h2 {
   clear: both;
 }
 
-section {
-  margin-bottom: 35px;
-}
-
 #about .career th {
   width: 240px;
   background-color: #f0f0f0;
@@ -242,6 +246,7 @@ table {
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
+/*  background-size: cover; */
 }
 
 .main {
@@ -274,12 +279,17 @@ table {
   opacity: 0.8;
 }
 
+.profile a img:hover {
+  opacity: 0.8;
+}
+
 #photograph {
   background-image: url(../img/bg-photograph.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
+/*  background-size: cover; */
 }
 
 #photograph .photograph-list li {
@@ -298,6 +308,7 @@ table {
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
+/*  background-size: cover; */
 }
 
 #contact {
@@ -306,6 +317,7 @@ table {
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
+/*  background-size: cover; */
 }
 
 #contact .access table {
@@ -398,6 +410,7 @@ table {
   margin: 20px 0 0 165px;
 }
 
+
 @media screen and (max-width:960px) {
 
   /* Applicable when window width is less than 960px. */
@@ -409,6 +422,7 @@ table {
     width: 960px;
   }
 }
+
 
 @media screen and (max-width:600px) {
 /* Applicable when window width is less than 600px. */
@@ -452,21 +466,37 @@ table {
     margin: 0 8px;
   }
 
+  #index {
+    background-image: url(../img/bg-index-sp.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+
+  #portfolio {
+    background-image: url(../img/bg-portfolio-sp.jpg);
+  }
+
+  #photograph {
+    background-image: url(../img/bg-photograph-sp.jpg);
+  }
+
+  #video {
+    background-image: url(../img/bg-video-sp.jpg);
+  }
+
+  #about {
+    background-image: url(../img/bg-about-sp.jpg);
+  }
+
+  #contact {
+    background-image: url(../img/bg-contact-sp.jpg);
+  }
+
   #wrap {
     width:100%;
-    margin-top: 40px;
-  }
-
-  #portfolio #wrap {
-    padding: 35px 0 0;
-  }
-
-  #photograph #wrap {
-    padding: 35px 0 0;
-  }
-
-  #video #wrap {
-    padding: 35px 0 0;
+/*    margin-top: 40px; */
+    margin-top: 80px;
+    padding: 10px 0 0;
   }
 
   .content {
@@ -487,7 +517,7 @@ table {
     width: auto;
     float: none;
     margin: 0;
-    padding: 30px 10% 10px;
+    padding: 30px 10% 30px;
     background-color: #f7f6f4;
   }
 
@@ -509,16 +539,16 @@ table {
   }
 
   #about .career th {
-    width: 120px;
+    width: auto;
     background-color: #f0f0f0;
     padding: 12px 12px;
     border: 1px solid #cccccc;
   }
 
   #about .career td {
-      width: auto;
-      padding: 12px 12px 12px 12px;
-      border: 1px solid #cccccc;
+    width: auto;
+    padding: 12px 12px;
+    border: 1px solid #cccccc;
   }
   #contact .access table {
     float: none;
@@ -573,6 +603,10 @@ table {
     padding: 10px 20px;
   }
 
+  #contact .form button {
+    margin: 0 auto;
+  }
+
   #contact .form .attention {
     margin: auto;
     margin-top: 20px;
@@ -582,15 +616,10 @@ table {
     margin: 150px auto 0;
   }
 
-  #index {
-    background-image: url(../img/bg-index-sp.jpg);
-    background-position: center top;
-    background-size: cover;
-  }
-
   #index #wrap {
     width: 100%;
     margin: 0 auto;
+    padding: 20px 0 0;
   }
 
   #index .content {
@@ -624,7 +653,7 @@ table {
   #contact .access iframe {
     float: none;
     width: 100%;
-    margin-top: 10px;
+    margin: 20px auto;
   }
 
   #video .main iframe {
