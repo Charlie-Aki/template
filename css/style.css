@@ -44,7 +44,12 @@ header {
 
 .logo {
   float: left;
-  margin-top: 50px;
+  margin-top: 25px;
+}
+
+.logo img {
+  width: auto;
+  height: 75px;
 }
 
 .global-nav {
@@ -71,10 +76,11 @@ header {
 }
 
 #wrap {
+  width: 100%;
+  margin: 180px auto 0px;
   clear: both;
   background-color: #ffffff;
 /*  background-color: rgba(255, 255, 255, 0.8); */
-  margin-top: 220px;
   padding: 35px 0;
 }
 
@@ -84,6 +90,8 @@ header {
 }
 
 footer {
+  width: 100%;
+  margin: 0px auto 0px;
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
@@ -133,8 +141,8 @@ footer small {
 }
 
 #index footer {
-  width: 960px;
   margin: 150px auto 0 auto;
+  padding-left: 5%;
   text-align: left;
   background-color: transparent;
 }
@@ -189,6 +197,8 @@ h2 {
 
 #about .profile-image {
   float: right;
+  border-radius: 50%;
+  margin-top: 10px;
 }
 
 .clearfix:after {
@@ -220,6 +230,7 @@ table {
 }
 
 #index #wrap {
+  width: 960px;
   background-color: transparent;
   margin-top: 0;
   padding: 0;
@@ -259,7 +270,7 @@ table {
   color: #333333;
 }
 
-a img:hover {
+.content a img:hover {
   opacity: 0.8;
 }
 
@@ -305,7 +316,8 @@ a img:hover {
 #contact .access td {
   text-align: left;
   vertical-align: top;
-  line-height: 2.5;
+  line-height: 1.25;
+  padding: 5px 0;
 }
 
 #contact .access td {
@@ -386,12 +398,237 @@ a img:hover {
   margin: 20px 0 0 165px;
 }
 
-/* Original */
-.logo {
-  margin-top: 25px;
+@media screen and (max-width:960px) {
+
+  /* Applicable when window width is less than 960px. */
+  #wrap {
+    width: 960px;
+  }
+
+  footer {
+    width: 960px;
+  }
 }
 
-.logo img {
-  width: auto;
-  height: 75px;
+@media screen and (max-width:600px) {
+/* Applicable when window width is less than 600px. */
+
+  body {
+    font-size: 3.5vw;
+  }
+
+  h1 {
+    font-size: 7.2vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+
+  footer {
+    width: auto;
+  }
+
+  .logo {
+    float: none;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .global-nav {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .global-nav li {
+    display: inline;
+    float: none;
+    margin: 0 8px;
+  }
+
+  #wrap {
+    width:100%;
+    margin-top: 40px;
+  }
+
+  #portfolio #wrap {
+    padding: 35px 0 0;
+  }
+
+  #photograph #wrap {
+    padding: 35px 0 0;
+  }
+
+  #video #wrap {
+    padding: 35px 0 0;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .main {
+    float: none;
+    width: auto;
+    margin: 0 5%;
+  }
+
+  h2 img {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 30px 10% 10px;
+    background-color: #f7f6f4;
+  }
+
+  .main-center {
+    width: auto;
+    margin: 0 5%;
+  }
+
+  #about .profile-txt {
+    width: auto;
+    float: none;
+  }
+
+  #about .profile-image {
+    float: none;
+    display: block;
+    width: 65%;
+    margin: 0px auto;
+  }
+
+  #about .career th {
+    width: 120px;
+    background-color: #f0f0f0;
+    padding: 12px 12px;
+    border: 1px solid #cccccc;
+  }
+
+  #about .career td {
+      width: auto;
+      padding: 12px 12px 12px 12px;
+      border: 1px solid #cccccc;
+  }
+  #contact .access table {
+    float: none;
+  }
+
+  #contact .form {
+    background-color: #eaeaea;
+    padding: 30px 30px;
+  }
+
+  #contact .form dl dt {
+    width: auto;
+    padding: 0;
+    float: none;
+  }
+
+  #contact .form dl dd {
+    margin: 0;
+    text-align: center;
+  }
+
+  #contact .form .name {
+    width: 80%;
+    height: 30px;
+  }
+
+  #contact .form .email {
+    width: 80%;
+    height: 30px;
+  }
+
+  #contact .form .tel {
+    width: 80%;
+    height: 30px;
+  }
+
+  #contact .form .type {
+    width: 80%;
+    height: 30px;
+  }
+
+  #contact .form .message {
+    width: 80%;
+    height: 150px;
+  }
+
+  #contact .form button {
+    font-size: 5vw;
+    width: auto;
+    margin-left: 0;
+    line-height: 5vw;
+    padding: 10px 20px;
+  }
+
+  #contact .form .attention {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #index footer {
+    margin: 150px auto 0;
+  }
+
+  #index {
+    background-image: url(../img/bg-index-sp.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+
+  #index #wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #index .content {
+    width: auto;
+    margin: 80px 5% 0 5%;
+  }
+
+  #index h1 {
+    font-size: 10vw;
+    margin-bottom: 12.5vw;
+  }
+
+  #index p {
+    font-size: 4vw;
+  }
+
+  .btn a {
+    font-size: 5vw;
+    width: 30vw;
+    line-height: 5vw;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+
+}
+
+
+/* For Testing */
+@media screen and (max-width:600px) {
+
+  #contact .access iframe {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #video .main iframe {
+    width: 100%;
+  }
+
 }
